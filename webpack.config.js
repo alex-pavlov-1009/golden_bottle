@@ -59,20 +59,21 @@ module.exports = {
             {
                 test: /\.(scss|sass|css)$/i,
                 use: ExtractTextPlugin.extract({
-                        use: [
-                            {
-                                loader: 'css-loader',
-                                options: {importLoaders: 1, url: true},
+                    use: [
+                        {
+                            loader: 'css-loader',
+                            options: {importLoaders: 1, url: true},
+                        },
+                        {
+                            loader: 'postcss-loader',
+                            options: {
+                                config: {
+                                    path: __dirname + '/postcss.config.js'
+                                }
                             },
-                            {
-                                loader: 'postcss-loader',
-                                options: {
-                                    config: {
-                                        path: __dirname + '/postcss.config.js'
-                                    }
-                                },
-                            },
-                        ]})
+                        },
+                    ]
+                })
             },
             // IMAGES
             {
@@ -81,7 +82,7 @@ module.exports = {
                 options: {
                     context: path.resolve(__dirname, 'src/assets/images'),
                     name: '/assets/images/[path][name].[ext]?[hash]',
-                    publicPath: function(url) {
+                    publicPath: function (url) {
                         return url.replace(/src/, '');
                     },
                 }
@@ -94,7 +95,7 @@ module.exports = {
                 options: {
                     context: path.resolve(__dirname, 'src/assets/fonts'),
                     name: '/assets/fonts/[path][name].[ext]?[hash]',
-                    publicPath: function(url) {
+                    publicPath: function (url) {
                         return url.replace(/src/, '');
                     },
 
