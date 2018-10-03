@@ -1,0 +1,19 @@
+.container{
+  width: 760px;
+  margin: 0px auto;
+}
+.section{
+  padding-top: 100px;
+  padding-bottom: 82px;
+}
+
+@media screen and (max-width: 768px) {
+  .section{
+    padding-top: 60px;
+  }
+    .container{
+      width: 100%;
+      padding: 0px 20px;
+    }
+}
+

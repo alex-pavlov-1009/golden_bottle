@@ -1,0 +1,21 @@
+html, body, .l-wrap{
+  height: 100%;
+}
+
+body>.l-wrap{
+  overflow: hidden;
+  min-height: 100%;
+  height: auto;
+
+}
+
+
+
+@media screen and (max-width: 1135px) {
+  body{
+    &.mobile-menu_active{
+      overflow: hidden;
+    }
+  }
+}
+

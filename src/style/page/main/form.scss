@@ -1,0 +1,68 @@
+.form__text{
+  font-size: 30px;
+  color: $black-custom;
+  text-align: center;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-bottom: 46px;
+}
+
+.beer-feature{
+  padding-top: 46px;
+  &__tabs{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 71px;
+  }
+  &-tab{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__text{
+      padding-top: 31px;
+      text-align: center;
+      color: $yellow-light;
+      font-size: 16px;
+    }
+    &__icon{
+
+    }
+    &_active{
+
+    }
+  }
+  &__text{
+    text-align: center;
+    max-width: 627px;
+    display: none;
+    margin: 0px auto;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-space: 1;
+    padding-bottom: 50px;
+    &_active{
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form__text{
+    padding-top: 30px;
+    font-size: 25px;
+  }
+  .beer-feature{
+    &__tabs{
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 30px;
+
+    }
+    &-tab{
+      padding: 0px 10px;
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "style/base/clear.scss";
+@import "style/base/vars.scss";
+
+@import "style/layouts/main.scss";
+@import "style/layouts/header.scss";
+
+@import "style/page/base.scss";
+@import "style/page/main/header.scss";
+@import "style/page/main/banner.scss";
+@import "style/page/main/form.scss";
+
+
+@import "style/ui/base/icon.scss";
+@import "style/ui/base/form.scss";

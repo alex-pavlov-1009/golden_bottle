@@ -1,0 +1,19 @@
+.header{
+  &-top{
+    background: $yellow-light;
+    height: 50px;
+  }
+  &-bottom{
+    z-index: 10;
+    background: $black-custom;
+    position: relative;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    &__logo{
+      position: absolute;
+      top: 50%;
+      margin-top: -80px;
+    }
+  }
+}
