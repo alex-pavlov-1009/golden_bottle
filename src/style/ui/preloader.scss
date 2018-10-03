@@ -54,3 +54,12 @@
     margin: 0px 10px;
   }
 }
+
+@media screen and (max-width: 321px) {
+  #pre-loader .icon{
+    width: 18px;
+    height: 62px;
+    margin: 0px 10px;
+    margin-bottom: -15px;
+  }
+}
