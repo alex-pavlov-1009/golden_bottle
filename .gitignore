@@ -1,7 +1,10 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
 #public
-/public
+/public/assets
+/public/css
+/public/bundle.*
+/public/vendor.*
 
 # dependencies
 /node_modules
