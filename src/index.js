@@ -4,6 +4,10 @@ import Inputmask from "inputmask";
 
 $(document).ready(() => {
 
+    setTimeout(() => {
+        $('.blackout').addClass('blackout_disabled')
+    }, 5000);
+
     new Inputmask("+9 (999) 999 99 99", {
         showMaskOnHover: false
     }).mask($('#phone'));

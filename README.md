@@ -5,3 +5,5 @@
 3. npm run watch 
 
 2-nd and 3-rd points need to start at the same time in different windows of console
+
+And finally, go to localhost:3000

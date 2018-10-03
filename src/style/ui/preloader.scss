@@ -1,0 +1,48 @@
+#pre-loader .icon{
+  display: inline-block;
+  width: 38px;
+  height: 142px;
+  margin: 0px 20px;
+}
+
+#pre-loader{
+  background: white;
+  left: 0px;
+  right: 0px;
+  justify-content: center;
+  margin: 0px auto;
+  top: 50%;
+  margin-top: -71px;
+}
+
+#pre-loader .icon:nth-child(1){
+  animation: grow 2s ease-in-out infinite;
+}
+
+#pre-loader .icon:nth-child(2){
+  animation: grow 2s ease-in-out 0.15s infinite;
+}
+
+#pre-loader .icon:nth-child(3){
+  animation: grow 2s ease-in-out 0.30s infinite;
+}
+
+#pre-loader .icon:nth-child(4){
+  animation: grow 2s ease-in-out 0.45s infinite;
+}
+
+@keyframes grow{
+  0%, 100%{
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    -o-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+  50%{
+    -webkit-transform: scaleY(1.2);
+    -ms-transform: scaleY(1.2);
+    -o-transform: scaleY(1.2);
+    transform: scaleY(1.2);
+  }
+}
