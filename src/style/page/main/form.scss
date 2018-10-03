@@ -15,20 +15,38 @@
     padding-bottom: 71px;
   }
   &-tab{
+    &:hover{
+      .beer-feature-tab__text{
+        color: $red;
+      }
+    }
     cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     &__text{
+      text-transform: uppercase;
       padding-top: 31px;
       text-align: center;
       color: $yellow-light;
       font-size: 16px;
     }
     &__icon{
-
+      display: block;
+      &_red{
+        display: none;
+      }
     }
     &_active{
+      .beer-feature-tab__icon{
+        display: none;
+        &_red{
+          display: block;
+        }
+      }
+      .beer-feature-tab__text{
+        color: $red;
+      }
 
     }
   }
@@ -61,8 +79,12 @@
 
     }
     &-tab{
-      padding: 0px 10px;
+      width: 100px;
+      padding: 0px 0px;
       margin-bottom: 20px;
+      &__text{
+        font-size: 13px;
+      }
     }
   }
 }

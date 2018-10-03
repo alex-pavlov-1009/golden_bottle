@@ -1,4 +1,4 @@
-#pre-loader .icon{
+#pre-loader .icon-bottle{
   display: inline-block;
   width: 38px;
   height: 142px;
@@ -44,5 +44,13 @@
     -ms-transform: scaleY(1.2);
     -o-transform: scaleY(1.2);
     transform: scaleY(1.2);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #pre-loader .icon{
+    width: 28px;
+    height: 122px;
+    margin: 0px 10px;
   }
 }
