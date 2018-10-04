@@ -71,9 +71,8 @@ $(document).ready(() => {
         dropAllTabs();
         $(this).addClass('beer-feature-tab_active');
         let textId = $(this).attr('href');
-        textId = textId.substring(1, textId.length)
         dropAllTexts();
-        $('#'+textId).addClass('beer-feature__text_active')
+        $(textId).addClass('beer-feature__text_active')
     });
 
     function dropAllTabs() {
